@@ -61,25 +61,45 @@
     </header>
 
     <main>
-      <div class="gallery-container">
-        <div class="left-image">
-          <img src="../imagenes/AdobeStock_164981549_ger.jpg" alt="Imagen Izquierda" />
-        </div>
-        <div class="middle-grid">
-          <img src="../imagenes/123.jfif" alt="Imagen 1" />
-          <img src="../imagenes/123.jfif" alt="Imagen 2" />
-          <img src="../imagenes/123.jfif" alt="Imagen 3" />
-          <img src="../imagenes/123.jfif" alt="Imagen 4" />
-          <img src="../imagenes/123.jfif" alt="Imagen 5" />
-          <img src="../imagenes/123.jfif" alt="Imagen 6" />
-          <img src="../imagenes/123.jfif" alt="Imagen 7" />
-          <img src="../imagenes/123.jfif" alt="Imagen 8" />
-          <img src="../imagenes/123.jfif" alt="Imagen 9" />
-        </div>
-        <div class="right-image">
-          <img src="../imagenes/istockphoto-622449006-612x612.jpg" alt="Imagen Derecha" />
-        </div>
-      </div>
+      <title>Sección de Contacto</title>
+      <style>
+          body {
+              font-family: Arial, sans-serif;
+              margin: 20px;
+          }
+          form {
+              max-width: 400px;
+              margin: auto;
+          }
+          label {
+              display: block;
+              margin-bottom: 5px;
+          }
+          input, textarea {
+              width: 100%;
+              padding: 10px;
+              margin-bottom: 10px;
+          }
+          button {
+              padding: 10px 15px;
+          }
+      </style>
+  </head>
+  <body>
+  
+  <h1>Contacto</h1>
+  <form action="enviar_mail.php" method="post">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+  
+      <label for="email">Correo Electrónico:</label>
+      <input type="email" id="email" name="email" required>
+  
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+  
+      <button type="submit">Enviar</button>
+  </form>
     </main>
     <footer>  
       <div class="footer-content">

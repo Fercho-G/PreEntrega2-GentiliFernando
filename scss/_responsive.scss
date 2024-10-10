@@ -1,0 +1,19 @@
+@media (max-width: 768px) {
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+
+    .middle-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-icons {
+        margin-bottom: 1rem;
+    }
+}
+

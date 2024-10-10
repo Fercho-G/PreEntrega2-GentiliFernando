@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #000;
+  color: black;
+}
+
+header {
+  background-color: #1a1a1a;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  color: black;
+  font-size: 1.8rem;
+  /* 18px */
+}
+nav ul li a:hover {
+  color: #ff4500;
+}
+
+.contenedor-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  /* 20px */
+  padding: 4rem;
+  /* 40px */
+}
+
+.column {
+  padding: 2rem;
+  /* 20px */
+  background-color: #1a1a1a;
+  border-radius: 8px;
+}
+
+.text-content h2 {
+  color: #ff4500;
+}
+.text-content p {
+  color: #fff;
+}
+
+.album-art img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+footer {
+  background-color: #1a1a1a;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content {
+  width: 100%;
+}
+
+.spotify-player {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  /* 20px */
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.social-icons {
+  display: flex;
+}
+.social-icons img {
+  width: 3rem;
+  /* 30px */
+  margin: 0 1rem;
+  /* 10px */
+}
+
+.band-logo img {
+  width: 10rem;
+  /* 100px */
+}
+
+.footer-content iframe {
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .gallery-container {
+    grid-template-columns: 1fr;
+  }
+  .middle-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+  .social-icons {
+    margin-bottom: 1rem;
+  }
+}
+.gallery-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  gap: 2rem;
+  padding: 4rem;
+}
+
+.left-image img,
+.right-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.middle-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 2rem;
+}
+.middle-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/*# sourceMappingURL=estilo.css.map */

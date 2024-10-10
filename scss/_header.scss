@@ -1,0 +1,32 @@
+@mixin anclas { 
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    background-color: #1a1a1a;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+
+    li {
+        margin: 0 15px;
+
+        a {
+            color: $color-blanco;
+            @include anclas; 
+            font-size: 1.8rem;
+
+            /* 18px */
+
+            &:hover {
+                color: $color-naranja
+            }
+        }
+    }
+}
